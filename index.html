@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<script src="http://ap.vip.com/statics/touch/jquery.min.js"></script>
+<script src="resources/js/sapp.js"></script>
+<script src="resources/js/com.js"></script>
+<link href="resources/css/style.css" rel="stylesheet">
+
+<title>唯品会</title>
+<meta name="front-end technicist" content="">
+<!--分享-->
+<meta name="shareIcon" content="resources/images/share_icon.jpg">
+<meta name="shareText" content="分享文案">
+</head>
+
+<body>
+
+<div id="wrap">
+
+  <div id="loading" class="in">loading</div>
+
+  <!--页面1-->
+  <section class="page" id="page1">
+    <div class="main">
+      <a id="nextPage"></a>
+  		<div class="animation1"></div>
+  		<div class="animation2"></div>
+  		<div class="animation3_A"><div class="animation3"></div></div>
+	 </div>
+    <div class="logo"></div>
+  </section>
+
+    <!--页面1-->
+  <section class="page" id="page2">
+    <div class="main">
+    <div class="animation1"></div>
+  </div>
+  </section>
+
+    <!--页面1-->
+  <section class="page" id="page3">
+    <div class="main">
+    <div class="animation1" id="page3bg">
+      <div class="eggBg1"></div>
+      <div class="eggBg2"></div>
+      <div class="eggBg3"></div>
+      <div class="eggBg4"></div>
+      <a class="egg" id="egg1"></a>
+      <a class="egg" id="egg2"></a>
+      <a class="egg" id="egg3"></a>
+      <a class="egg" id="egg4"></a>
+
+      <a class="product" id="product1"></a>
+      <a class="product" id="product2"></a>
+      <a class="product" id="product3"></a>
+      <a class="product" id="product4"></a>
+      <a class="product" id="product5"></a>
+      <a class="product" id="product6"></a>
+      <a class="product" id="product7"></a>
+      <a class="product" id="product8"></a>
+      <a class="product" id="product9"></a>
+
+
+
+    </div>
+  </div>
+  </section>
+
+    <!--页面1-->
+  <section class="page" id="page4">
+    <div class="main">
+    <a class="lastShare" href="javascript:goShare()"></a>
+    <a class="home" href="http://m.vip.com"></a>
+      <div id="phoneRight">
+        <div id="phoneTop">
+        <div class="phone"></div>
+        <div class="phone_hide"><div id="phoneBgLeft"><div id="phoneBg"></div></div></div>
+        </div>
+      </div>
+      <div class="eggBg5"></div>
+      <a id="egg5"></a>
+  </div>
+  </section>
+
+
+  <!--控件层-->
+  <aside id="aside">
+    <div id="popBg"></div>
+    <div class="main">
+      <div class="pop">
+        <div id="pop1">
+          <a class="closeEgg"></a>
+          <a id="openEgg">
+            <span class="eggCont" id="eggCont">发现20元红包</span>
+            <span class="eggBtn" id="eggBtn">点击领取</span>
+          </a>
+        </div>
+      </div>
+      <div class="pop">
+          <div id="pop2">
+            <a class="closeEgg"></a>
+            <a class="share">
+              <span class="eggCont">成功领取</span>
+              <span class="eggBtn">让朋友羡慕一下</span>
+            </a>
+          </div>
+        </div>
+      <div class="pop">
+          <div id="pop3">
+            <a class="closeEgg"></a>
+            <a class="share"></a>
+          </div>
+        </div>
+        <div class="pop">
+          <div id="pop4">
+            <a class="closeEgg"></a>
+            <a class="noClick"></a>
+          </div>
+        </div>
+
+
+     <div class="productArr">
+          <ul id="product_pop_1">
+            <a class="openProduct"></a>
+            <a class="closeProduct"></a>
+          </ul>
+          <ul class="product_border">
+            <ul class="product_hide">
+              <li class="product1_1"></li>
+              <li class="product1_2"></li>
+              <li class="product1_3"></li>
+              <li class="product1_4"></li>
+              <li class="product1_5"></li>
+              <a class="leftProduct"><img src="resources/images/left_icon.png"></a>
+              <a class="rightProduct"><img src="resources/images/left_icon.png"></a>
+            </ul>
+          </ul>
+      </div>
+
+     <div class="productArr">
+          <ul id="product_pop_2">
+            <a class="openProduct"></a>
+            <a class="closeProduct"></a>
+          </ul>
+          <ul class="product_border">
+            <ul class="product_hide">
+              <li class="product2_1"></li>
+              <li class="product2_2"></li>
+              <li class="product2_3"></li>
+              <li class="product2_4"></li>
+              <a class="leftProduct"><img src="resources/images/left_icon.png"></a>
+              <a class="rightProduct"><img src="resources/images/left_icon.png"></a>
+            </ul>
+          </ul>
+      </div>
+
+     <div class="productArr">
+          <ul id="product_pop_3">
+            <a class="openProduct"></a>
+            <a class="closeProduct"></a>
+          </ul>
+          <ul class="product_border">
+            <ul class="product_hide">
+              <li class="product3_1"></li>
+              <li class="product3_2"></li>
+              <li class="product3_3"></li>
+              <li class="product3_4"></li>
+              <li class="product3_5"></li>
+              <a class="leftProduct"><img src="resources/images/left_icon.png"></a>
+              <a class="rightProduct"><img src="resources/images/left_icon.png"></a>
+            </ul>
+          </ul>
+      </div>
+
+     <div class="productArr">
+          <ul id="product_pop_4">
+            <a class="openProduct"></a>
+            <a class="closeProduct"></a>
+          </ul>
+          <ul class="product_border">
+            <ul class="product_hide">
+              <li class="product4_1"></li>
+              <li class="product4_2"></li>
+              <li class="product4_3"></li>
+              <li class="product4_4"></li>
+              <li class="product4_5"></li>
+              <a class="leftProduct"><img src="resources/images/left_icon.png"></a>
+              <a class="rightProduct"><img src="resources/images/left_icon.png"></a>
+            </ul>
+          </ul>
+      </div>
+
+     <div class="productArr">
+          <ul id="product_pop_5">
+            <a class="openProduct"></a>
+            <a class="closeProduct"></a>
+          </ul>
+          <ul class="product_border">
+            <ul class="product_hide">
+              <li class="product5_1"></li>
+              <a class="leftProduct"></a>
+              <a class="rightProduct"></a>
+            </ul>
+          </ul>
+      </div>
+
+     <div class="productArr">
+          <ul id="product_pop_6">
+            <a class="openProduct"></a>
+            <a class="closeProduct"></a>
+          </ul>
+          <ul class="product_border">
+            <ul class="product_hide">
+              <li class="product6_1"></li>
+              <li class="product6_2"></li>
+              <li class="product6_3"></li>
+              <li class="product6_4"></li>
+              <li class="product6_5"></li>
+              <a class="leftProduct"><img src="resources/images/left_icon.png"></a>
+              <a class="rightProduct"><img src="resources/images/left_icon.png"></a>
+            </ul>
+          </ul>
+      </div>
+
+     <div class="productArr">
+          <ul id="product_pop_7">
+            <a class="openProduct"></a>
+            <a class="closeProduct"></a>
+          </ul>
+          <ul class="product_border">
+            <ul class="product_hide">
+              <li class="product7_1"></li>
+              <li class="product7_2"></li>
+              <li class="product7_3"></li>
+              <li class="product7_4"></li>
+              <li class="product7_5"></li>
+              <a class="leftProduct"><img src="resources/images/left_icon.png"></a>
+              <a class="rightProduct"><img src="resources/images/left_icon.png"></a>
+            </ul>
+          </ul>
+      </div>
+
+     <div class="productArr">
+          <ul id="product_pop_8">
+            <a class="openProduct"></a>
+            <a class="closeProduct"></a>
+          </ul>
+          <ul class="product_border">
+            <ul class="product_hide">
+              <li class="product8_1"></li>
+              <a class="leftProduct"></a>
+              <a class="rightProduct"></a>
+            </ul>
+          </ul>
+      </div>
+
+     <div class="productArr">
+          <ul id="product_pop_9">
+            <a class="openProduct"></a>
+            <a class="closeProduct"></a>
+          </ul>
+          <ul class="product_border">
+            <ul class="product_hide">
+              <li class="product9_1"></li>
+              <li class="product9_2"></li>
+              <li class="product9_3"></li>
+              <li class="product9_4"></li>
+              <li class="product9_5"></li>
+              <a class="leftProduct"><img src="resources/images/left_icon.png"></a>
+              <a class="rightProduct"><img src="resources/images/left_icon.png"></a>
+            </ul>
+          </ul>
+      </div>
+
+	</div>
+  
+    </aside>
+<div class="hide" id="sharePop">
+  <!-- 弹窗蒙层 -->
+  <div class="pop-cover"></div>
+  <!-- wap分享 -->
+  <div class="pop-bottom-share">
+      <div class="pop-bs-main">
+          <a class="pop-bs-sina" href="javascript:;" data-role="sinaweibo">新浪微博</a>
+          <a class="pop-bs-qzone" href="javascript:;" data-role="qqzone">QQ空间</a>
+          <a class="pop-bs-cancel" href="javascript:goShare();" data-role="cancelShare">取消</a>
+      </div>
+  </div>
+  <!-- 微信分享弹窗 -->
+  <div class="pop-share-wx"></div>
+</div>
+
+
+</div>
+<script src="resources/js/main.js?v1"></script>
+<!--埋点js-->
+<script src="http://3rd-app.vipstatic.com/mars/mars_wap.js"></script>
+
+</html>
